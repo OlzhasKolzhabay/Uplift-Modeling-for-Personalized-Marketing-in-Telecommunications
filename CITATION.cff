@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Uplift Modeling for Personalized Marketing in Telecommunications"
+type: software
+version: 1.0.0
+date-released: 2026-11-11
+license: MIT
+authors:
+  - family-names: Askar
+    given-names: Abilkhay
+    affiliation: Astana IT University
+  - family-names: Olzhas
+    given-names: Kolzhabay
+    affiliation: Astana IT University
+keywords:
+  - uplift modeling
+  - heterogeneous treatment effects
+  - meta-learners
+  - Qini coefficient
+  - telecommunications marketing

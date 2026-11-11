@@ -1,0 +1,141 @@
+{
+  "final_model": "T-learner",
+  "best_params": {
+    "S-learner": {
+      "lr": 0.1,
+      "leaves": 63,
+      "iters": 150
+    },
+    "T-learner": {
+      "lr": 0.1,
+      "leaves": 63,
+      "iters": 150
+    },
+    "Class transformation": {
+      "lr": 0.05,
+      "leaves": 31,
+      "iters": 300
+    },
+    "Conversion model": {
+      "lr": 0.1,
+      "leaves": 63,
+      "iters": 150
+    }
+  },
+  "data_quality": {
+    "rows": 600000,
+    "features": 50,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "treatment_share": 0.5006133333333334,
+    "conversion_rate": 0.20419
+  },
+  "ate": {
+    "p_treatment": 0.22891919245725242,
+    "p_control": 0.1794000640786031,
+    "ate": 0.04951912837864933,
+    "ci_low": 0.04748319424598671,
+    "ci_high": 0.05155506251131195,
+    "relative_lift": 0.27602625803384784
+  },
+  "max_smd": 0.004572946198259056,
+  "overall_uplift_test": 0.04952316780621363,
+  "test_metrics": {
+    "S-learner": {
+      "Qini coefficient": 0.24297841686984117,
+      "AUUC": 0.16791364214965795,
+      "Uplift@30%": 0.2192591628291199
+    },
+    "T-learner": {
+      "Qini coefficient": 0.2450099924177855,
+      "AUUC": 0.16954629508502894,
+      "Uplift@30%": 0.22443011162051102
+    },
+    "Class transformation": {
+      "Qini coefficient": 0.2314891328539755,
+      "AUUC": 0.15993048828957276,
+      "Uplift@30%": 0.216505333947923
+    },
+    "T-learner (LogReg)": {
+      "Qini coefficient": 0.04054702439821587,
+      "AUUC": 0.028230166458903784,
+      "Uplift@30%": 0.08518136253287878
+    },
+    "Conversion model": {
+      "Qini coefficient": 0.09645153270190701,
+      "AUUC": 0.06660168882060971,
+      "Uplift@30%": 0.11525915347253612
+    },
+    "Random": {
+      "Qini coefficient": -0.003302361074580649,
+      "AUUC": -0.0023358907648968422,
+      "Uplift@30%": 0.04543094852442106
+    }
+  },
+  "repeated_splits": {
+    "S-learner": {
+      "qini_mean": 0.24066283959626564,
+      "qini_std": 0.00460258396903397,
+      "qini_min": 0.23295757869917824,
+      "positive_splits": 5,
+      "uplift30_mean": 0.21856170527977206
+    },
+    "T-learner": {
+      "qini_mean": 0.24376919964723404,
+      "qini_std": 0.0025789884426265053,
+      "qini_min": 0.24050852859014885,
+      "positive_splits": 5,
+      "uplift30_mean": 0.22267090719873467
+    },
+    "Class transformation": {
+      "qini_mean": 0.2303588960862374,
+      "qini_std": 0.0027456663896976295,
+      "qini_min": 0.2263647880290229,
+      "positive_splits": 5,
+      "uplift30_mean": 0.21445394100809473
+    },
+    "T-learner (LogReg)": {
+      "qini_mean": 0.035598618043272426,
+      "qini_std": 0.002954272746373502,
+      "qini_min": 0.03315826066787759,
+      "positive_splits": 5,
+      "uplift30_mean": 0.08111515012815257
+    },
+    "Conversion model": {
+      "qini_mean": 0.09584431827146561,
+      "qini_std": 0.0025541824963008276,
+      "qini_min": 0.09194994378700744,
+      "positive_splits": 5,
+      "uplift30_mean": 0.11533027287794928
+    },
+    "Random": {
+      "qini_mean": -0.0021249825597356325,
+      "qini_std": 0.003445348879698175,
+      "qini_min": -0.007306555982309412,
+      "positive_splits": 1,
+      "uplift30_mean": 0.04790896189683422
+    }
+  },
+  "negative_uplift": {
+    "share": 0.35155,
+    "n_negative": 63279,
+    "observed_uplift_negative": -0.11459759715708945,
+    "observed_uplift_rest": 0.1384898032462274
+  },
+  "permutation_base_qini": 0.23653244083169672,
+  "success_criteria": {
+    "1_data_size": true,
+    "2_group_identification": true,
+    "3_group_balance": true,
+    "4_coverage": true,
+    "5_better_than_random": true,
+    "6_better_than_conversion_model": true,
+    "7_stability": true,
+    "8_targeting_value": true,
+    "9_reproducibility": true
+  },
+  "all_criteria_met": true,
+  "runtime_min": 12.160859227180481,
+  "sample": null,
+  "fast": false
+}
